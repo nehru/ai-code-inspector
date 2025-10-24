@@ -58,14 +58,14 @@ def save_markdown_report(report: Dict, output_dir: str = "outputs") -> str:
     
     md_content = f"""# Code Review Report
 
-## 📋 Summary
+##  Summary
 - **File**: {summary['file']}
 - **Language**: {summary['language']}
 - **Lines of Code**: {summary['lines_of_code']}
 - **Timestamp**: {summary['timestamp']}
 - **Overall Severity**: {summary['overall_severity']}
 
-## 🐛 Bugs Found: {len(bugs)}
+##  Bugs Found: {len(bugs)}
 
 """
     
@@ -82,7 +82,7 @@ def save_markdown_report(report: Dict, output_dir: str = "outputs") -> str:
     else:
         md_content += "*No bugs detected*\n\n"
     
-    md_content += f"## ⚡ Optimizations: {len(optimizations)}\n\n"
+    md_content += f"##  Optimizations: {len(optimizations)}\n\n"
     
     if optimizations:
         for i, opt in enumerate(optimizations, 1):
@@ -115,14 +115,14 @@ def print_report_summary(report: Dict):
     optimizations = report['optimizations']
     
     print("\n" + "="*60)
-    print("📊 CODE REVIEW SUMMARY")
+    print(" CODE REVIEW SUMMARY")
     print("="*60)
     print(f"File: {summary['file']}")
     print(f"Language: {summary['language']}")
     print(f"Lines: {summary['lines_of_code']}")
     print(f"Overall Severity: {summary['overall_severity']}")
     print("-"*60)
-    print(f"🐛 Bugs Found: {len(bugs)}")
+    print(f" Bugs Found: {len(bugs)}")
     
     severity_dist = report['severity_distribution']
     if any(severity_dist.values()):
@@ -131,5 +131,5 @@ def print_report_summary(report: Dict):
         print(f"   - Medium: {severity_dist['medium']}")
         print(f"   - Low: {severity_dist['low']}")
     
-    print(f"⚡ Optimizations: {len(optimizations)}")
+    print(f" Optimizations: {len(optimizations)}")
     print("="*60 + "\n")
