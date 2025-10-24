@@ -1,4 +1,4 @@
-# 🏗️ System Architecture Documentation
+#  System Architecture Documentation
 
 ## Overview
 
