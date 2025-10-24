@@ -59,12 +59,12 @@ class DeepSeekAgent:
             return {"response": content}
             
         except json.JSONDecodeError as e:
-            print(f"⚠️  JSON parsing error: {e}")
+            print(f" JSON parsing error: {e}")
             print(f"Raw response: {content[:200]}...")
             return {"error": "json_parse_error", "raw_response": content}
         
         except Exception as e:
-            print(f"❌ Error querying model: {e}")
+            print(f" Error querying model: {e}")
             return {"error": str(e)}
     
     def detect_bugs(self, code: str, language: str, prompt_template: str) -> Dict:
