@@ -26,7 +26,7 @@ def parse_code_node(state: ReviewState) -> ReviewState:
     - Validates file size
     - Prepares metadata
     """
-    print("📝 Parsing code...")
+    print(" Parsing code...")
     
     file_path = state['file_path']
     
@@ -35,7 +35,7 @@ def parse_code_node(state: ReviewState) -> ReviewState:
         with open(file_path, 'r', encoding='utf-8') as f:
             code_content = f.read()
     except Exception as e:
-        print(f"❌ Error reading file: {e}")
+        print(f" Error reading file: {e}")
         state['code_content'] = ""
         state['metadata'] = {"error": str(e)}
         return state
@@ -67,7 +67,7 @@ def parse_code_node(state: ReviewState) -> ReviewState:
         'language': language
     }
     
-    print(f"✅ Parsed {language} file: {state['metadata']['lines_of_code']} lines")
+    print(f" Parsed {language} file: {state['metadata']['lines_of_code']} lines")
     return state
 
 
@@ -79,13 +79,13 @@ def bug_detection_node(state: ReviewState) -> ReviewState:
     - Parses bug findings
     - Filters by confidence threshold
     """
-    print("🔍 Detecting bugs...")
+    print(" Detecting bugs...")
     
     code = state['code_content']
     language = state['language']
     
     if not code or language == 'unknown':
-        print("⚠️  Skipping bug detection - invalid code or language")
+        print("  Skipping bug detection - invalid code or language")
         state['bugs'] = []
         return state
     
@@ -103,7 +103,7 @@ def bug_detection_node(state: ReviewState) -> ReviewState:
     filtered_bugs = [b for b in bugs if b.get('confidence', 0) >= 0.7]
     
     state['bugs'] = filtered_bugs
-    print(f"✅ Found {len(filtered_bugs)} bugs (confidence >= 0.7)")
+    print(f" Found {len(filtered_bugs)} bugs (confidence >= 0.7)")
     
     return state
 
@@ -116,13 +116,13 @@ def optimization_node(state: ReviewState) -> ReviewState:
     - Parses optimization suggestions
     - Categories: performance, security, best practices
     """
-    print("⚡ Analyzing optimizations...")
+    print(" Analyzing optimizations...")
     
     code = state['code_content']
     language = state['language']
     
     if not code or language == 'unknown':
-        print("⚠️  Skipping optimization - invalid code or language")
+        print("  Skipping optimization - invalid code or language")
         state['optimizations'] = []
         return state
     
@@ -137,7 +137,7 @@ def optimization_node(state: ReviewState) -> ReviewState:
     optimizations = result.get('optimizations', [])
     
     state['optimizations'] = optimizations
-    print(f"✅ Found {len(optimizations)} optimization opportunities")
+    print(f" Found {len(optimizations)} optimization opportunities")
     
     return state
 
@@ -150,7 +150,7 @@ def report_generation_node(state: ReviewState) -> ReviewState:
     - Calculates severity metrics
     - Formats output as JSON
     """
-    print("📊 Generating report...")
+    print(" Generating report...")
     
     bugs = state['bugs']
     optimizations = state['optimizations']
@@ -190,6 +190,6 @@ def report_generation_node(state: ReviewState) -> ReviewState:
     }
     
     state['report'] = report
-    print(f"✅ Report generated: {len(bugs)} bugs, {len(optimizations)} optimizations")
+    print(f" Report generated: {len(bugs)} bugs, {len(optimizations)} optimizations")
     
     return state
