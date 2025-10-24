@@ -2,6 +2,41 @@
 
 Automated code review system powered by **LangGraph** + **DeepSeek-R1** for bug detection and optimization suggestions.
 
+
+##  Starting code review for: test_samples/buggy_code.py
+============================================================
+ Parsing code...
+ Parsed python file: 72 lines
+ Detecting bugs...
+  JSON parsing error: Expecting value: line 1 column 1 (char 0)
+Raw response: ...
+ Found 0 bugs (confidence >= 0.7)
+ Analyzing optimizations...
+  JSON parsing error: Expecting value: line 1 column 1 (char 0)
+Raw response: ...
+ Found 0 optimization opportunities
+ Generating report...
+ Report generated: 0 bugs, 0 optimizations
+============================================================
+ Review complete!
+
+
+============================================================
+ CODE REVIEW SUMMARY
+============================================================
+File: buggy_code.py
+Language: python
+Lines: 72
+Overall Severity: LOW
+------------------------------------------------------------
+ Bugs Found: 0
+ Optimizations: 0
+============================================================
+
+ Reports saved:
+   - JSON: outputs\review_20251024_143756.json
+   - Markdown: outputs\review_20251024_143756.md
+
 ##  Features
 
 -  **Automated Bug Detection** - Identifies common coding issues and vulnerabilities
