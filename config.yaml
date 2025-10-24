@@ -1,0 +1,44 @@
+# AI Code Reviewer Configuration
+
+# Ollama Model Settings
+model:
+  name: "deepseek-r1:latest"
+  temperature: 0.1
+  max_tokens: 2048
+  base_url: "http://localhost:11434"
+
+# Review Settings
+review:
+  max_file_size: 50000  # characters
+  supported_languages:
+    - python
+    - javascript
+    - typescript
+    - java
+  
+  # Bug detection sensitivity
+  bug_detection:
+    min_confidence: 0.7
+    severity_levels:
+      - critical
+      - high
+      - medium
+      - low
+  
+  # Optimization categories
+  optimization:
+    check_performance: true
+    check_security: true
+    check_best_practices: true
+    check_code_smell: true
+
+# Output Settings
+output:
+  format: "json"  # json, markdown, both
+  include_code_snippets: true
+  max_suggestions_per_issue: 3
+
+# Performance
+performance:
+  batch_size: 1
+  timeout: 30  # seconds per file
