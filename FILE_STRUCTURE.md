@@ -3,13 +3,13 @@
 ```
 ai-code-reviewer/
 │
-├── 📖 README.md                    # Main documentation (features, setup, demo)
-├── 🚀 QUICKSTART.md               # 5-minute getting started guide  
-├── 🏗️ ARCHITECTURE.md             # Technical architecture deep-dive
-├── 📋 PROJECT_SUMMARY.md          # This summary document
+├──  README.md                    # Main documentation (features, setup, demo)
+├──  QUICKSTART.md               # 5-minute getting started guide  
+├──  ARCHITECTURE.md             # Technical architecture deep-dive
+├──  PROJECT_SUMMARY.md          # This summary document
 │
-├── ⚙️ requirements.txt             # Python dependencies (10 packages)
-├── ⚙️ config.yaml                  # Configuration (model, review, output settings)
+├──  requirements.txt             # Python dependencies (10 packages)
+├──  config.yaml                  # Configuration (model, review, output settings)
 │
 ├── src/                           # Core source code (355 lines)
 │   ├── __init__.py               # Package initialization
@@ -30,7 +30,7 @@ ai-code-reviewer/
     └── .gitkeep                  # Keeps directory in git
 ```
 
-## 📊 Code Statistics
+##  Code Statistics
 
 | Category | Files | Lines |
 |----------|-------|-------|
@@ -41,7 +41,7 @@ ai-code-reviewer/
 | Configuration | 2 | N/A |
 | **Total** | **15** | **779** |
 
-## 🎯 Key Files Explained
+##  Key Files Explained
 
 ### Core Implementation (src/)
 
@@ -83,7 +83,7 @@ ai-code-reviewer/
 | `config.yaml` | Model settings, review parameters, output options |
 | `requirements.txt` | Python package dependencies |
 
-## 🔍 Dependencies
+##  Dependencies
 
 ```
 Core Framework:
@@ -99,7 +99,7 @@ Utilities:
   - rich 13.9.4            # Console formatting
 ```
 
-## 📈 Workflow Architecture
+##  Workflow Architecture
 
 ```
 ┌─────────┐
@@ -145,7 +145,7 @@ Utilities:
 ✅ Clean, modular architecture  
 ✅ Production-ready error handling  
 
-## 🚀 Usage
+##  Usage
 
 ```bash
 # Single file review
@@ -155,22 +155,22 @@ python examples/review.py test_samples/buggy_code.py
 python examples/review.py path/to/your/code.py
 ```
 
-## 📊 Output Examples
+## Output Examples
 
 **Console:**
 ```
-📊 CODE REVIEW SUMMARY
+CODE REVIEW SUMMARY
 ============================================================
 File: buggy_code.py
 Language: python
 Lines: 67
 Overall Severity: HIGH
 ------------------------------------------------------------
-🐛 Bugs Found: 5
+ Bugs Found: 5
    - Critical: 1
    - High: 3
    - Medium: 1
-⚡ Optimizations: 4
+ Optimizations: 4
 ```
 
 **JSON Report:** `outputs/review_TIMESTAMP.json`  
@@ -178,6 +178,6 @@ Overall Severity: HIGH
 
 ---
 
-**Project Ready for GitHub! 🎉**
+**Project Ready for GitHub! **
 
 Total: 15 files | 779 lines | Production-ready | Portfolio-quality
