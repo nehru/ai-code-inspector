@@ -1,4 +1,4 @@
-# 📁 Complete File Structure
+#  Complete File Structure
 
 ```
 ai-code-reviewer/
@@ -132,18 +132,18 @@ Utilities:
 └─────────┘
 ```
 
-## ✨ Features Checklist
+##  Features Checklist
 
-✅ LangGraph workflow orchestration  
-✅ DeepSeek-R1 local inference via Ollama  
-✅ Multi-language support (Python, JS, TS, Java, C++, Go, Ruby, PHP)  
-✅ Bug detection with confidence scoring  
-✅ Optimization suggestions (performance, security, best practices)  
-✅ JSON & Markdown report generation  
-✅ RTX 5090 GPU acceleration  
-✅ Professional documentation  
-✅ Clean, modular architecture  
-✅ Production-ready error handling  
+ LangGraph workflow orchestration  
+ DeepSeek-R1 local inference via Ollama  
+ Multi-language support (Python, JS, TS, Java, C++, Go, Ruby, PHP)  
+ Bug detection with confidence scoring  
+ Optimization suggestions (performance, security, best practices)  
+JSON & Markdown report generation  
+ RTX 5090 GPU acceleration  
+ Professional documentation  
+ Clean, modular architecture  
+ Production-ready error handling  
 
 ##  Usage
 
