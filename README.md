@@ -2,8 +2,7 @@
 
 Automated code review system powered by **LangGraph** + **DeepSeek-R1** for bug detection and optimization suggestions.
 
-
-##  Starting code review for: test_samples/buggy_code.py
+##  Starting code review for : test_samples/buggy_code.py
 ============================================================
  Parsing code...
  Parsed python file: 72 lines
@@ -37,13 +36,14 @@ Overall Severity: LOW
    - JSON: outputs\review_20251024_143756.json
    - Markdown: outputs\review_20251024_143756.md
 
+
 ##  Features
 
 -  **Automated Bug Detection** - Identifies common coding issues and vulnerabilities
 -  **Optimization Suggestions** - Performance and best practice recommendations  
 -  **85% Accuracy** - High precision bug detection on test dataset
 -  **Local Execution** - Runs entirely on your RTX 5090 via Ollama
--  **Detailed Reports** - JSON and Markdown formatted output
+-  **Detailed Reports** - JSON and Markdown formatted outputs
 
 ##  Architecture
 
@@ -109,7 +109,7 @@ python examples/review.py test_samples/buggy_code.py
 }
 ```
 
-## Performance Metrics
+##  Performance Metrics
 
 - **Accuracy**: 85% on test dataset
 - **False Positive Rate**: <10%
