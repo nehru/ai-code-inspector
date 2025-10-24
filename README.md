@@ -1,16 +1,16 @@
-# 🤖 AI Code Review Tool
+#  AI Code Review Tool
 
 Automated code review system powered by **LangGraph** + **DeepSeek-R1** for bug detection and optimization suggestions.
 
-## ✨ Features
+##  Features
 
-- 🔍 **Automated Bug Detection** - Identifies common coding issues and vulnerabilities
-- ⚡ **Optimization Suggestions** - Performance and best practice recommendations  
-- 🎯 **85% Accuracy** - High precision bug detection on test dataset
-- 🖥️ **Local Execution** - Runs entirely on your RTX 5090 via Ollama
-- 📊 **Detailed Reports** - JSON and Markdown formatted outputs
+-  **Automated Bug Detection** - Identifies common coding issues and vulnerabilities
+-  **Optimization Suggestions** - Performance and best practice recommendations  
+-  **85% Accuracy** - High precision bug detection on test dataset
+-  **Local Execution** - Runs entirely on your RTX 5090 via Ollama
+-  **Detailed Reports** - JSON and Markdown formatted output
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Code Input → Parser Node → Bug Detection Node → Optimization Node → Report Generator
@@ -19,7 +19,7 @@ Code Input → Parser Node → Bug Detection Node → Optimization Node → Repo
                               (via Ollama)         (via Ollama)
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -48,14 +48,14 @@ python examples/review.py test_samples/buggy_code.py
 # Output will be saved in outputs/ directory
 ```
 
-## 📦 Tech Stack
+##  Tech Stack
 
 - **LangGraph** - Workflow orchestration
 - **DeepSeek-R1** - Large language model
 - **Ollama** - Local model serving
 - **Python 3.10+** - Core language
 
-## 📊 Sample Output
+##  Sample Output
 
 ```json
 {
@@ -74,21 +74,10 @@ python examples/review.py test_samples/buggy_code.py
 }
 ```
 
-## 🎯 Performance Metrics
+## Performance Metrics
 
 - **Accuracy**: 85% on test dataset
 - **False Positive Rate**: <10%
 - **Average Review Time**: ~5 seconds per file
 - **GPU Memory Usage**: ~8GB VRAM
 
-## 📝 License
-
-MIT License - Feel free to use for your projects!
-
-## 🤝 Contributing
-
-Pull requests welcome! This is a proof-of-concept showcase project.
-
----
-
-**Built with ❤️ for automated code quality**
