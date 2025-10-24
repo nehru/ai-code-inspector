@@ -67,13 +67,13 @@ def run_review(file_path: str) -> dict:
         "metadata": {}
     }
     
-    print(f"\n🚀 Starting code review for: {file_path}")
+    print(f"\n Starting code review for: {file_path}")
     print("=" * 60)
     
     # Execute workflow
     final_state = app.invoke(initial_state)
     
     print("=" * 60)
-    print("✅ Review complete!\n")
+    print(" Review complete!\n")
     
     return final_state['report']
