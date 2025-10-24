@@ -152,22 +152,22 @@ Each node is a pure function that takes `ReviewState` and returns modified `Revi
 
 ```
 1. User Input
-   └─▶ File path provided via CLI
+    File path provided via CLI
 
 2. Parse Node
-   └─▶ Read file → Detect language → Create metadata
+    Read file → Detect language → Create metadata
 
 3. Bug Detection Node
-   └─▶ Format prompt → Call LLM → Parse JSON → Filter results
+    Format prompt → Call LLM → Parse JSON → Filter results
 
 4. Optimization Node
-   └─▶ Format prompt → Call LLM → Parse JSON → Categorize
+    Format prompt → Call LLM → Parse JSON → Categorize
 
 5. Report Generation Node
-   └─▶ Aggregate findings → Calculate metrics → Format output
+    Aggregate findings → Calculate metrics → Format output
 
 6. Save Reports
-   └─▶ Write JSON file → Write Markdown file → Display summary
+    Write JSON file → Write Markdown file → Display summary
 ```
 
 ## Configuration (`config.yaml`)
@@ -215,7 +215,3 @@ Each node is a pure function that takes `ReviewState` and returns modified `Revi
 - **Injection Prevention**: Sanitized inputs to LLM
 - **Output Sandboxing**: Reports saved to dedicated directory
 
----
-
-**Architecture Version**: 1.0.0  
-**Last Updated**: 2025-01-24
