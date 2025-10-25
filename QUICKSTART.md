@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide
+#  Quick Start Guide
 
 Get the AI Code Reviewer running in 5 minutes!
 
@@ -37,35 +37,35 @@ python examples/review.py test_samples/buggy_code.py
 
 Expected output:
 ```
-🚀 Starting code review for: test_samples/buggy_code.py
+ Starting code review for: test_samples/buggy_code.py
 ============================================================
-📝 Parsing code...
-✅ Parsed python file: 67 lines
-🔍 Detecting bugs...
-✅ Found 5 bugs (confidence >= 0.7)
-⚡ Analyzing optimizations...
-✅ Found 4 optimization opportunities
-📊 Generating report...
-✅ Report generated: 5 bugs, 4 optimizations
+ Parsing code...
+ Parsed python file: 67 lines
+ Detecting bugs...
+ Found 5 bugs (confidence >= 0.7)
+ Analyzing optimizations...
+ Found 4 optimization opportunities
+ Generating report...
+ Report generated: 5 bugs, 4 optimizations
 ============================================================
-✅ Review complete!
+ Review complete!
 
-📊 CODE REVIEW SUMMARY
+ CODE REVIEW SUMMARY
 ============================================================
 File: buggy_code.py
 Language: python
 Lines: 67
 Overall Severity: HIGH
 ------------------------------------------------------------
-🐛 Bugs Found: 5
+ Bugs Found: 5
    - Critical: 1
    - High: 3
    - Medium: 1
    - Low: 0
-⚡ Optimizations: 4
+ Optimizations: 4
 ============================================================
 
-💾 Reports saved:
+ Reports saved:
    - JSON: outputs/review_20250124_143022.json
    - Markdown: outputs/review_20250124_143022.md
 ```
@@ -78,12 +78,12 @@ python examples/review.py path/to/your/code.py
 
 Supported file types: `.py`, `.js`, `.ts`, `.java`, `.cpp`, `.c`, `.go`, `.rb`, `.php`
 
-## 📁 Check Your Reports
+##  Check Your Reports
 
 - **JSON Report**: `outputs/review_TIMESTAMP.json`
 - **Markdown Report**: `outputs/review_TIMESTAMP.md`
 
-## ⚙️ Customize Settings
+##  Customize Settings
 
 Edit `config.yaml` to adjust:
 - Model temperature
@@ -91,7 +91,7 @@ Edit `config.yaml` to adjust:
 - Output formats
 - Review categories
 
-## 🆘 Troubleshooting
+##  Troubleshooting
 
 ### "Ollama connection refused"
 ```bash
@@ -110,7 +110,7 @@ ollama pull deepseek-r1:latest
 - Close other GPU applications
 - Try smaller model: `ollama pull deepseek-r1:7b`
 
-## 🎯 Next Steps
+##  Next Steps
 
 1. Review multiple files in your project
 2. Integrate into CI/CD pipeline
@@ -119,4 +119,4 @@ ollama pull deepseek-r1:latest
 
 ---
 
-**Ready to find bugs? Start reviewing! 🐛🔍**
+**Ready to find bugs? Start reviewing! **
