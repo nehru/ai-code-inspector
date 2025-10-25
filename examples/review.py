@@ -26,7 +26,7 @@ def main():
     
     # Check arguments
     if len(sys.argv) < 2:
-        print("❌ Usage: python examples/review.py <file_path>")
+        print(" Usage: python examples/review.py <file_path>")
         print("Example: python examples/review.py test_samples/buggy_code.py")
         sys.exit(1)
     
@@ -34,7 +34,7 @@ def main():
     
     # Verify file exists
     if not os.path.exists(file_path):
-        print(f"❌ File not found: {file_path}")
+        print(f" File not found: {file_path}")
         sys.exit(1)
     
     try:
@@ -42,7 +42,7 @@ def main():
         report = run_review(file_path)
         
         if not report:
-            print("❌ Review failed to generate report")
+            print(" Review failed to generate report")
             sys.exit(1)
         
         # Print summary to console
@@ -52,15 +52,15 @@ def main():
         json_path = save_json_report(report)
         md_path = save_markdown_report(report)
         
-        print(f"💾 Reports saved:")
+        print(f" Reports saved:")
         print(f"   - JSON: {json_path}")
         print(f"   - Markdown: {md_path}")
         
     except KeyboardInterrupt:
-        print("\n\n⚠️  Review interrupted by user")
+        print("\n\n  Review interrupted by user")
         sys.exit(0)
     except Exception as e:
-        print(f"\n❌ Error during review: {e}")
+        print(f"\n Error during review: {e}")
         import traceback
         traceback.print_exc()
         sys.exit(1)
