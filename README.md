@@ -1,4 +1,4 @@
-# 🤖 AI Code Review Tool
+#  AI Code Review Tool
 
 Automated code review system powered by **LangGraph** + **DeepSeek-R1** for bug detection and optimization suggestions.
 
