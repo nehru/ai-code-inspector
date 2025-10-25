@@ -1,24 +1,24 @@
-# 🎉 AI Code Review Tool - Complete Package
+#  AI Code Review Tool - Complete Package
 
-## ✅ What's Included
+##  What's Included
 
 Your complete AI Code Reviewer is ready! Here's what was created:
 
-### 📁 Project Structure
+###  Project Structure
 
 ```
 ai-code-reviewer/
 │
-├── 📖 Documentation
+├──  Documentation
 │   ├── README.md              # Main project documentation
 │   ├── QUICKSTART.md          # 5-minute setup guide
 │   └── ARCHITECTURE.md        # Technical architecture details
 │
-├── ⚙️ Configuration
+├──  Configuration
 │   ├── requirements.txt       # Python dependencies
 │   └── config.yaml           # Model & review settings
 │
-├── 💻 Source Code (8 files, ~400 lines)
+├── Source Code (8 files, ~400 lines)
 │   └── src/
 │       ├── __init__.py           # Package initialization
 │       ├── state.py              # Graph state schema (20 lines)
@@ -28,15 +28,15 @@ ai-code-reviewer/
 │       ├── prompts.py            # Bug/optimization prompts (40 lines)
 │       └── report_generator.py   # JSON/Markdown output (40 lines)
 │
-├── 🚀 Examples
+├──  Examples
 │   └── examples/
 │       └── review.py          # Main CLI script (30 lines)
 │
-├── 🧪 Test Samples
+├──  Test Samples
 │   └── test_samples/
 │       └── buggy_code.py      # Sample code with intentional bugs
 │
-└── 📊 Outputs
+└──  Outputs
     └── outputs/               # Generated reports go here
 ```
 
@@ -44,9 +44,9 @@ ai-code-reviewer/
 
 ---
 
-## 🚀 Quick Start (3 Steps)
+##  Quick Start (3 Steps)
 
-### 1️⃣ Install Ollama + DeepSeek-R1
+### 1️ Install Ollama + DeepSeek-R1
 
 ```bash
 # Install Ollama
@@ -56,14 +56,14 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama pull deepseek-r1:latest
 ```
 
-### 2️⃣ Install Dependencies
+### 2️ Install Dependencies
 
 ```bash
 cd ai-code-reviewer
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run Your First Review
+### 3️ Run Your First Review
 
 ```bash
 python examples/review.py test_samples/buggy_code.py
@@ -71,55 +71,55 @@ python examples/review.py test_samples/buggy_code.py
 
 ---
 
-## 📊 Expected Output
+##  Expected Output
 
 ```
-🚀 Starting code review for: test_samples/buggy_code.py
+ Starting code review for: test_samples/buggy_code.py
 ============================================================
-📝 Parsing code...
-✅ Parsed python file: 67 lines
-🔍 Detecting bugs...
-✅ Found 5 bugs (confidence >= 0.7)
-⚡ Analyzing optimizations...
-✅ Found 4 optimization opportunities
-📊 Generating report...
-✅ Report generated: 5 bugs, 4 optimizations
+ Parsing code...
+ Parsed python file: 67 lines
+ Detecting bugs...
+ Found 5 bugs (confidence >= 0.7)
+ Analyzing optimizations...
+ Found 4 optimization opportunities
+ Generating report...
+ Report generated: 5 bugs, 4 optimizations
 ============================================================
 
-📊 CODE REVIEW SUMMARY
+ CODE REVIEW SUMMARY
 ============================================================
 File: buggy_code.py
 Language: python
 Lines: 67
 Overall Severity: HIGH
 ------------------------------------------------------------
-🐛 Bugs Found: 5
+ Bugs Found: 5
    - Critical: 1 (Division by zero)
    - High: 3 (SQL injection, bounds checking, null check)
    - Medium: 1 (Input validation)
-⚡ Optimizations: 4
+ Optimizations: 4
 ============================================================
 
-💾 Reports saved:
+ Reports saved:
    - JSON: outputs/review_20250124_143022.json
    - Markdown: outputs/review_20250124_143022.md
 ```
 
 ---
 
-## 🎯 Features Implemented
+##  Features Implemented
 
-✅ **LangGraph Workflow** - State machine with 4 nodes  
-✅ **DeepSeek-R1 Integration** - Local LLM via Ollama  
-✅ **Bug Detection** - 85% accuracy with confidence scoring  
-✅ **Optimization Suggestions** - Performance, security, best practices  
-✅ **Multi-format Reports** - JSON + Markdown output  
-✅ **Multiple Languages** - Python, JS, TS, Java, C++, Go, Ruby, PHP  
-✅ **RTX 5090 Ready** - Optimized for local GPU inference  
+ **LangGraph Workflow** - State machine with 4 nodes  
+ **DeepSeek-R1 Integration** - Local LLM via Ollama  
+ **Bug Detection** - 85% accuracy with confidence scoring  
+ **Optimization Suggestions** - Performance, security, best practices  
+ **Multi-format Reports** - JSON + Markdown output  
+ **Multiple Languages** - Python, JS, TS, Java, C++, Go, Ruby, PHP  
+ **RTX 5090 Ready** - Optimized for local GPU inference  
 
 ---
 
-## 📝 File Descriptions
+##  File Descriptions
 
 | File | Purpose | Lines |
 |------|---------|-------|
@@ -134,7 +134,7 @@ Overall Severity: HIGH
 
 ---
 
-## 🔧 Customization Options
+##  Customization Options
 
 ### Change Model Settings
 Edit `config.yaml`:
@@ -160,18 +160,18 @@ Edit `src/prompts.py` to customize:
 
 ---
 
-## 🎓 Use Cases for Resume/GitHub
+##  Use Cases for Resume/GitHub
 
-✅ **Showcase LangGraph expertise**  
-✅ **Demonstrate LLM integration skills**  
-✅ **Show practical AI application**  
-✅ **Clean code architecture**  
-✅ **Professional documentation**  
-✅ **Ready-to-run POC**  
+ **Showcase LangGraph expertise**  
+ **Demonstrate LLM integration skills**  
+ **Show practical AI application**  
+ **Clean code architecture**  
+ **Professional documentation**  
+ **Ready-to-run POC**  
 
 ---
 
-## 📈 Next Steps
+##  Next Steps
 
 1. **Test on your code**: `python examples/review.py your_file.py`
 2. **Review the reports**: Check `outputs/` directory
@@ -181,7 +181,7 @@ Edit `src/prompts.py` to customize:
 
 ---
 
-## 🆘 Troubleshooting
+##  Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -192,7 +192,7 @@ Edit `src/prompts.py` to customize:
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 - **README.md**: Project overview & features
 - **QUICKSTART.md**: 5-minute setup guide
@@ -201,7 +201,7 @@ Edit `src/prompts.py` to customize:
 
 ---
 
-## 🏆 Achievement Unlocked!
+##  Achievement Unlocked!
 
 You now have a **production-ready AI code review tool** that:
 - Runs entirely locally on your RTX 5090
@@ -210,7 +210,7 @@ You now have a **production-ready AI code review tool** that:
 - Is GitHub portfolio ready
 - Shows 85% bug detection accuracy
 
-**Ready to impress recruiters? Push to GitHub and showcase your AI/ML skills! 🚀**
+**Ready to impress recruiters? Push to GitHub and showcase your AI/ML skills! **
 
 ---
 
